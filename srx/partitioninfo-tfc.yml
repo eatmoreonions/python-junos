@@ -1,0 +1,14 @@
+---
+PartitionTable:
+  rpc:  get-snapshot-information
+  args:
+    media: internal
+  item:  .//multi-routing-engine-item/snapshot-information/software-version/package
+  key: package-name
+  view:  PartitionView
+
+PartitionView:
+  fields:
+    medium: ../../snapshot-medium
+    package: package-name
+    version: package-version

@@ -1,0 +1,17 @@
+---
+ShowInterface:
+  rpc:  get-interface-information
+  item:  .//physical-interface
+  key:  name
+  view:  InterfaceView
+ 
+InterfaceView:
+  fields:
+    name:  name
+    status:  oper-status
+    description:  description
+    linkmode:  link-mode
+    linkspeed:  speed
+    logicalname:  logical-interface/name
+    addrfamily:  logical-interface/address-family/address-family-name
+    logicalinetaddr:  logical-interface/address-family/interface-address/ifa-local

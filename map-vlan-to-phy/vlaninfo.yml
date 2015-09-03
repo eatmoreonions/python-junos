@@ -1,0 +1,16 @@
+---
+ShowInterface:
+  rpc:  get-vlan-information
+  item:  .//vlan
+  key:  vlan-name
+  view:  VlanView
+ 
+VlanView:
+  fields:
+    name:  vlan-name
+    status:  vlan-status
+    tag:  vlan-tag
+    l3int: vlan-l3-interface
+    l3addr: vlan-l3-interface-address
+    membercount: vlan-members-count
+    memberlist:  vlan-detail/vlan-member-list/vlan-member/vlan-member-interface
